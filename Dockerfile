@@ -2,6 +2,7 @@ FROM jupyter/datascience-notebook
 
 RUN pip install papermill[all]
 RUN pip install jupyter jupyterhub ethercalc-python
+RUN wget https://repo.huaweicloud.com/repository/pypi/simple/prog-edu-assistant-tools/prog_edu_assistant_tools-0.2-py3-none-any.whl
 RUN pip install https://repo.huaweicloud.com/repository/pypi/simple/prog-edu-assistant-tools/prog_edu_assistant_tools-0.2-py3-none-any.whl
 
 ARG NB_USER=jovyan
